@@ -42,7 +42,7 @@ Now add below line in your project level build
 If you are not using Firebase, please use the following code.
 
 ```gradle
-implementation ('com.ringer.interactive.version_name'){
+implementation ('com.github.RingerInteractive:Ringer-SDK-Android:x.y.z'){
         transitive = true
         // Use the consuming application's FireBase module, so exclude it
         // from the dependency. (not totally necessary if you use compileOnly
@@ -50,7 +50,7 @@ implementation ('com.ringer.interactive.version_name'){
         exclude group: 'com.google.firebase'
         // Exclude the "plain java" json module to fix build warnings.
         exclude group: 'org.json', module: 'json'
- }
+    }
     implementation("com.google.firebase:firebase-messaging:22.0.0") {
         // Exclude the "plain java" json module to fix build warnings.
         exclude group: 'org.json', module: 'json'
