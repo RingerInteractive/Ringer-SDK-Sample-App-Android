@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="fontTypeFaceName" format="string" />
+    <attr name="fontSize" format="float" />
+    <attr name="fontSizeSystem" format="boolean" />
+    <attr name="fontSizeScale" format="float" />
+    <declare-styleable name="FlashTextView">
+        <attr name="fontTypeFaceName" />
+        <attr name="fontSize" />
+        <attr name="fontSizeSystem" />
+        <attr name="fontSizeScale" />
+    </declare-styleable>
+</resources>

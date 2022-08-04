@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.ringer.dial.model.FlashTextView
+        android:id="@+id/inputNumber"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:alpha="0.87"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/colorFontBlack"
+        android:textIsSelectable="true"
+        app:autoSizeMaxTextSize="45dp"
+        app:autoSizeMinTextSize="20dp"
+        app:autoSizeStepGranularity="2dp"
+        app:fontSize="90" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/dra_line_below_shadow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="@dimen/dial_pad_space_line">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/one"
+                android:layout_width="@dimen/dial_pad_button_size"
+                android:layout_height="@dimen/dial_pad_button_size"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/colorFontBlack"
+                    app:fontSize="@integer/dial_pad_num_text_size" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/two"
+                android:layout_width="@dimen/dial_pad_button_size"
+                android:layout_height="@dimen/dial_pad_button_size"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textColor="@color/colorFontBlack"
+                    app:fontSize="@integer/dial_pad_num_text_size" />
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dial_pad_space_title_sub"
+                    android:text="ABC"
+                    android:textColor="@color/text_dial_pad_sub_col"
+                    app:fontSize="@integer/dial_pad_num_sub_text_size" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/three"
+                android:layout_width="@dimen/dial_pad_button_size"
+                android:layout_height="@dimen/dial_pad_button_size"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textColor="@color/colorFontBlack"
+                    app:fontSize="@integer/dial_pad_num_text_size" />
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dial_pad_space_title_sub"
+                    android:text="DEF"
+                    android:textColor="@color/text_dial_pad_sub_col"
+                    app:fontSize="@integer/dial_pad_num_sub_text_size" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/dial_pad_space_line"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="@dimen/dial_pad_space_line">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/four"
+                android:layout_width="@dimen/dial_pad_button_size"
+                android:layout_height="@dimen/dial_pad_button_size"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textColor="@color/colorFontBlack"
+                    app:fontSize="@integer/dial_pad_num_text_size" />
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dial_pad_space_title_sub"
+                    android:text="GHI"
+                    android:textColor="@color/text_dial_pad_sub_col"
+                    app:fontSize="@integer/dial_pad_num_sub_text_size" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/five"
+                android:layout_width="@dimen/dial_pad_button_size"
+                android:layout_height="@dimen/dial_pad_button_size"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="@color/colorFontBlack"
+                    app:fontSize="@integer/dial_pad_num_text_size" />
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dial_pad_space_title_sub"
+                    android:text="JKL"
+                    android:textColor="@color/text_dial_pad_sub_col"
+                    app:fontSize="@integer/dial_pad_num_sub_text_size" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/six"
+                android:layout_width="@dimen/dial_pad_button_size"
+                android:layout_height="@dimen/dial_pad_button_size"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="@color/colorFontBlack"
+                    app:fontSize="@integer/dial_pad_num_text_size" />
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dial_pad_space_title_sub"
+                    android:text="DEF"
+                    android:textColor="#b9b9b9"
+                    app:fontSize="@integer/dial_pad_num_sub_text_size" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/dial_pad_space_line"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="@dimen/dial_pad_space_line">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/seven"
+                android:layout_width="@dimen/dial_pad_button_size"
+                android:layout_height="@dimen/dial_pad_button_size"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textColor="@color/colorFontBlack"
+                    app:fontSize="@integer/dial_pad_num_text_size" />
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dial_pad_space_title_sub"
+                    android:text="PQRS"
+                    android:textColor="@color/text_dial_pad_sub_col"
+                    app:fontSize="@integer/dial_pad_num_sub_text_size" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/eight"
+                android:layout_width="@dimen/dial_pad_button_size"
+                android:layout_height="@dimen/dial_pad_button_size"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:textColor="@color/colorFontBlack"
+                    app:fontSize="@integer/dial_pad_num_text_size" />
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dial_pad_space_title_sub"
+                    android:text="TUV"
+                    android:textColor="@color/text_dial_pad_sub_col"
+                    app:fontSize="@integer/dial_pad_num_sub_text_size" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/nine"
+                android:layout_width="@dimen/dial_pad_button_size"
+                android:layout_height="@dimen/dial_pad_button_size"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9"
+                    android:textColor="@color/colorFontBlack"
+                    app:fontSize="@integer/dial_pad_num_text_size" />
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dial_pad_space_title_sub"
+                    android:text="WXYZ"
+                    android:textColor="#b9b9b9"
+                    app:fontSize="@integer/dial_pad_num_sub_text_size" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/dial_pad_space_line"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="@dimen/dial_pad_space_line">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/star"
+                android:layout_width="@dimen/dial_pad_button_size"
+                android:layout_height="@dimen/dial_pad_button_size"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/colorFontBlack"
+                    app:fontSize="@integer/dial_pad_num_text_size" />
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dial_pad_space_title_sub"
+                    android:textColor="@color/text_dial_pad_sub_col"
+                    app:fontSize="@integer/dial_pad_num_sub_text_size" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/zero"
+                android:layout_width="@dimen/dial_pad_button_size"
+                android:layout_height="@dimen/dial_pad_button_size"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/colorFontBlack"
+                    app:fontSize="@integer/dial_pad_num_text_size" />
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dial_pad_space_title_sub"
+                    android:text="+"
+                    android:textColor="@color/text_dial_pad_sub_col"
+                    app:fontSize="@integer/dial_pad_num_sub_text_size" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/sign"
+                android:layout_width="@dimen/dial_pad_button_size"
+                android:layout_height="@dimen/dial_pad_button_size"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#"
+                    android:textColor="@color/colorFontBlack"
+                    app:fontSize="@integer/dial_pad_num_text_size" />
+
+                <com.ringer.dial.model.FlashTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dial_pad_space_title_sub"
+                    android:textColor="#b9b9b9"
+                    app:fontSize="@integer/dial_pad_num_sub_text_size" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/clearAll"
+                android:layout_width="@dimen/dial_pad_button_size"
+                android:layout_height="@dimen/dial_pad_button_size"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="center"
+                android:src="@drawable/ic_dial_clear_all" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/call"
+                android:layout_width="@dimen/dial_pad_button_size"
+                android:layout_height="@dimen/dial_pad_button_size"
+                android:layout_gravity="center"
+                android:background="@drawable/dra_call_accept_green_bg"
+                android:scaleType="center"
+                android:src="@drawable/ic_call_accept_white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/clear"
+                android:layout_width="@dimen/dial_pad_button_size"
+                android:layout_height="@dimen/dial_pad_button_size"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="center"
+                android:src="@drawable/ic_dial_clear" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dial_pad_button_size">50dp</dimen>
+    <dimen name="dial_pad_space_line">1dp</dimen>
+    <dimen name="dial_pad_space_title_sub">-3dp</dimen>
+    <dimen name="dialpad_button_size">60dp</dimen>
+    <dimen name="dialpad_button_size_small">50dp</dimen>
+    <dimen name="dialpad_text_size">30sp</dimen>
+    <integer name="dial_pad_num_text_size">80</integer>
+    <integer name="dial_pad_num_sub_text_size">45</integer>
+
+    <integer name="call_dial_pad_num_text_size">80</integer>
+    <integer name="call_dial_pad_num_sub_text_size">45</integer>
+</resources>
