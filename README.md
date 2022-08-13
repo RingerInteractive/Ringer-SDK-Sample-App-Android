@@ -120,3 +120,9 @@ This step is for the permissions you need granted.
 
 
 ## How to use sample app
+##### 1.Download lasted release APK and install on your device
+##### 2.Build APK from [Ringer-Sample-App] (https://github.com/RingerInteractive/Ringer-SDK-Sample-App)
+
+After install you should grant those require permission 
+<p align="center"><img src="[https://app.onesignal.com/images/android_notification_image.gif](https://raw.githubusercontent.com/RingerInteractive/Ringer-SDK-Sample-App/main/default_call.png)" width="400" alt="Default Call Hanlder"></p>
+
