@@ -6,8 +6,8 @@ Ringer is an Android SDK that allows the mobile app to save and update contacts 
 
 ## Precondition 
 
-### Minimum SDK Version Supported is 7 Nouget
-### You have to use Hilt (Dependency Injection) to use this SDK
+#### 1.Minimum SDK Version Supported is 7 Nouget
+#### 2.You have to use Hilt (Dependency Injection) to use this SDK
 
 
 ### Follow this steps to integration SDK in your application
