@@ -88,7 +88,7 @@ To continue to get notified
 
 After adding these credentials you will have access to the SDK.
 
-## Step 3.3
+### Step 3.3
 
 In your MainActivity, call the following function to continue.
 This is required to use the SDK.
