@@ -123,6 +123,39 @@ This step is for the permissions you need granted.
 ##### 1.Download lasted release APK and install on your device
 ##### 2.Build APK from [Ringer-Sample-App] (https://github.com/RingerInteractive/Ringer-SDK-Sample-App)
 
-After install you should grant those required permission 
+##### After install you should grant those required permission 
+1. Default call handler
+```YourActivity
+  offerReplacingDefaultDialer(this, applicationContext.packageName, REQUEST_CODE_SDK)
+ ```
 <p align="center"><img src="https://raw.githubusercontent.com/RingerInteractive/Ringer-SDK-Sample-App/main/default_call.png" width="400" alt="Default call"></p>
+
+2. Access Contact
+```YourActivity
+  ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_CONTACTS, Manifest.permission.WRITE_CONTACTS), PERMISSIONS_REQUEST_READ_CONTACTS)
+
+ ```
+<p align="center"><img src="https://raw.githubusercontent.com/RingerInteractive/Ringer-SDK-Sample-App/main/access_contact.png" width="400" alt="access contact"></p>
+
+
+3. Appear On Top
+```YourActivity
+   ActivityCompat.requestPermissions(this,arrayOf(Manifest.permission.SYSTEM_ALERT_WINDOW),PERMISSIONS_REQUEST_CALL_LOG)
+ ```
+<p align="center"><img src="https://raw.githubusercontent.com/RingerInteractive/Ringer-SDK-Sample-App/main/ontop_permission.png" width="400" alt="on top"></p>
+
+4. Allow app notification
+<p align="center"><img src="https://raw.githubusercontent.com/RingerInteractive/Ringer-SDK-Sample-App/main/allow_notification.png" width="400" alt="on top"></p>
+
+5. Main Screen
+<p align="center"><img src="https://raw.githubusercontent.com/RingerInteractive/Ringer-SDK-Sample-App/main/main_screen.png" width="400" alt="on top"></p>
+
+5. Open Admin portal with provide account and make phone call to test 
+
+
+
+
+
+
+
 
