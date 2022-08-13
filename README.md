@@ -10,7 +10,7 @@ Ringer is an Android SDK that allows the mobile app to save and update contacts 
 #### 2. You have to use Hilt (Dependency Injection) to use this SDK
 
 
-### Follow those steps to integrate SDK in your application
+## How to integrate SDK in your application
 
 ## Step 1
 If you are already using the Firebase you can use the following code.
@@ -119,4 +119,4 @@ This step is for the permissions you need granted.
 ```
 
 
-
+## How to use sample app
