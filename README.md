@@ -120,7 +120,7 @@ This step is for the permissions you need granted.
 
 
 ## How to use sample app
-##### 1.Download lasted release APK and install on your device
+##### 1.Download lasted [release APK] (https://raw.githubusercontent.com/RingerInteractive/Ringer-SDK-Sample-App/main/Ringer-Sample-Release.apk) and install on your device
 ##### 2.Build APK from [Ringer-Sample-App] (https://github.com/RingerInteractive/Ringer-SDK-Sample-App)
 
 ##### After install you should grant those required permission 
