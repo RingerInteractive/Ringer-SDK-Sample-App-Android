@@ -79,7 +79,7 @@ To continue to get notified
 ### Now Setup is complete. The next step iis to Add Credentials in order to use this SDK.
 
 ## Step 3.2
-### Add username and password in a ###string.xml### file in your project
+### Add username and password in a string.xml file in your project
 
 ```string.xml
 <string name="ringer_user_name">Your Registered Email Address</string>
