@@ -6,13 +6,13 @@ Ringer is an Android SDK that allows the mobile app to save and update contacts 
 
 ## Precondition 
 
-#### 1. Minimum SDK Version Supported is 7 Nouget
-#### 2. You have to use Hilt (Dependency Injection) to use this SDK
+##### 1. Minimum SDK Version Supported is 7 Nouget
+##### 2. You have to use Hilt (Dependency Injection) to use this SDK
 
 
 ## How to integrate SDK in your application
 
-## Step 1
+### Step 1
 If you are already using the Firebase you can use the following code.
 Add the function below in the FirebaseMessagingService
 
@@ -25,7 +25,7 @@ Add the function below in the FirebaseMessagingService
         }
 ```
 
-## Step 2
+### Step 2
 Now add below line in your project level build
 
 ```
@@ -39,7 +39,7 @@ Now add below line in your project level build
 
 ```
 
-## Step 3
+### Step 3
 If you are not using Firebase, please use the following code.
 
 ```gradle
@@ -58,7 +58,7 @@ implementation ('com.github.RingerInteractive:Ringer-SDK-Android:1.0.0'){
     }
 ```
 
-## Step 3.1
+### Step 3.1
 In the Manifest File add the following code.
 To continue to get notified
 
@@ -78,7 +78,7 @@ To continue to get notified
 
 ### Now Setup is complete. The next step iis to Add Credentials in order to use this SDK.
 
-## Step 3.2
+### Step 3.2
 ### Add username and password in a string.xml file in your project
 
 ```string.xml
@@ -99,7 +99,7 @@ This is required to use the SDK.
 
 ```
 
-## Step 3.4
+### Step 3.4
 
 Final Step to Complete the SDK Setup
 This step is for the permissions you need granted.
