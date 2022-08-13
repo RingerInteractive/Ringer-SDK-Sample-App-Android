@@ -4,12 +4,13 @@
 Ringer is an Android SDK that allows the mobile app to save and update contacts along with notifications. The end result is such that the app can push fullscreen images to call recipients' mobile phones, and the sdk can provide information on the call recipient's device, such as OS version of Device, Device Name, and Timezone of Device.
 </p>
 
-## Download SDK
-Please visit the [Releases](https://github.com/RingerInteractive/Ringer-SDK-Sample-App) to get latest package.
+## Precondition 
 
-### Here are the instructions to implement this SDK within your own mobile application.
 ### Minimum SDK Version Supported is 7 Nouget
 ### You have to use Hilt (Dependency Injection) to use this SDK
+
+
+### Follow this steps to integration SDK in your application
 
 # Step 1
 If you are already using the Firebase you can use the following code.
