@@ -71,6 +71,7 @@
                 android:fontFamily="@font/nexabold"
                 android:text="Allow Ringer Access to Contacts"
                 android:textAllCaps="false"
+                android:gravity="center"
                 android:textColor="@color/white"
                 android:textSize="23sp"
                 android:textStyle="bold" />

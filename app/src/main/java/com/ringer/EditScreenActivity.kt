@@ -33,13 +33,7 @@ class EditScreenActivity : AppCompatActivity() {
         fabDialPad = findViewById(R.id.fab_dial_pad)
         PreferencesApp().setScreenNumber(this, 5)
         initialize()
-        InitializeToken(
-            this,
-            resources.getString(R.string.ringer_user_name),
-            resources.getString(R.string.ringer_password),
-            resources.getString(R.string.app_name),
-            ""
-        )
+        InitializeToken(this, "", resources.getString(R.string.app_name), "")
         onClick()
     }
 

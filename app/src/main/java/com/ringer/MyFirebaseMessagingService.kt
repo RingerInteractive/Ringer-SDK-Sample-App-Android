@@ -27,11 +27,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
 
         try {
-            Log.e("asdads", "adsadsa")
-
-            LibrarySDKMessagingService().sendNotification(this, remoteMessage)
-
-
+            LibrarySDKMessagingService().sendNotification(this, remoteMessage,R.color.bg_color,R.mipmap.ic_launcher,R.string.app_name)
         } catch (e: Exception) {
             e.printStackTrace()
             Log.e("errorSDK",""+e.message)

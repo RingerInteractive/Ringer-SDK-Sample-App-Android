@@ -44,16 +44,8 @@ class ThankYouScreen : AppCompatActivity() {
             drawer_layout.openDrawer(Gravity.START)
         }
 
-
         //Firebase Token Generation
-
-        InitializeToken(
-            this,
-            resources.getString(R.string.ringer_user_name),
-            resources.getString(R.string.ringer_password),
-            resources.getString(R.string.app_name),
-            PreferencesApp().getContactNumber(this)
-        )
+        InitializeToken(this, "", resources.getString(R.string.app_name), "")
     }
     /*//Permission
     override fun onRequestPermissionsResult(
