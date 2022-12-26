@@ -12,20 +12,32 @@ Ringer is an Android SDK that allows the mobile app to save and update contacts 
 
 ## How to integrate SDK in your application
 
+
 ### Step 1
-If you are already using the Firebase you can use the following code.
-Add the function below in the FirebaseMessagingService
+Init SDK in your main application <br>
+token your token when register tenantID this feild is require  <br>
+app_name you application name optional  <br>
+phone_number your phone optional 
+```
+ InitializeToken(this, token,app_name, phone_number)
+```
+### Step 2
+If you are already using the Firebase you can use the following code.<br>
+Add the function below in the FirebaseMessagingService<br>
+R.color.bg_color background notification color<br>
+R.mipmap.ic_launcher notification icon<br>
+R.string.app_name noitficaiton title <br>
 
 ```onMessageReceived
 
         try {
-            LibrarySDKMessagingService().sendNotification(this,remoteMessage)
+            LibrarySDKMessagingService().sendNotification(this,remoteMessage,R.color.bg_color, R.mipmap.ic_launcher,R.string.app_name)
         } catch (e: Exception) {
             e.printStackTrace()
         }
 ```
 
-### Step 2
+### Step 3
 Now add below line in your project level build
 
 ```
@@ -39,11 +51,11 @@ Now add below line in your project level build
 
 ```
 
-### Step 3
+### Step 4
 If you are not using Firebase, please use the following code.
 
 ```gradle
-implementation ('com.github.RingerInteractive:Ringer-SDK-Android:1.0.0'){
+implementation ('com.github.RingerInteractive:Ringer-SDK-Android:1.x.x'){
         transitive = true
         // Use the consuming application's FireBase module, so exclude it
         // from the dependency. (not totally necessary if you use compileOnly
@@ -58,7 +70,7 @@ implementation ('com.github.RingerInteractive:Ringer-SDK-Android:1.0.0'){
     }
 ```
 
-### Step 3.1
+### Step 4.1
 In the Manifest File add the following code.
 To continue to get notified
 
@@ -78,7 +90,7 @@ To continue to get notified
 
 ##### Now Setup is complete. The next step iis to Add Credentials in order to use this SDK.
 
-### Step 3.2
+### Step 4.2
 #### Add username and password in a string.xml file in your project
 
 ```string.xml
@@ -88,7 +100,7 @@ To continue to get notified
 
 After adding these credentials you will have access to the SDK.
 
-### Step 3.3
+### Step 4.3
 
 In your MainActivity, call the following function to continue.
 This is required to use the SDK.
@@ -99,7 +111,7 @@ This is required to use the SDK.
 
 ```
 
-### Step 3.4
+### Step 4.4
 
 Final Step to Complete the SDK Setup
 This step is for the permissions you need granted.
@@ -151,7 +163,6 @@ This step is for the permissions you need granted.
 <p align="center"><img src="https://raw.githubusercontent.com/RingerInteractive/Ringer-SDK-Sample-App/main/main_screen.png" width="400" alt="on top"></p>
 
 5. Open Admin portal with provide account and make phone call to test 
-
 
 
 
