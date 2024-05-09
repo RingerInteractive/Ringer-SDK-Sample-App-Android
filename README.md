@@ -4,8 +4,10 @@
 Ringer is an Android SDK that allows the mobile app to save and update contacts along with notifications. The end result is such that the app can push fullscreen images to call recipients' mobile phones, and the sdk can provide information on the call recipient's device, such as OS version of Device, Device Name, and Timezone of Device.
 </p>
 
-## Precondition 
 
+
+## Precondition 
+##### 0. Ringer SDK Lasted version </br> [![](https://jitpack.io/v/RingerInteractive/Ringer-Android-SDK.svg)](https://jitpack.io/#RingerInteractive/Ringer-Android-SDK)
 ##### 1. Minimum SDK Version Supported is 7 Nouget
 ##### 2. You have to use Hilt (Dependency Injection) to use this SDK
 
@@ -52,10 +54,10 @@ Now add below line in your project level build
 ```
 
 ### Step 4
-If you are not using Firebase, please use the following code.
+If you are  using Firebase, please use the following code.
 
 ```gradle
-implementation ('com.github.RingerInteractive:Ringer-SDK-Android:1.x.x'){
+implementation ('com.github.RingerInteractive:Ringer-SDK-Android:2.x.x'){
         transitive = true
         // Use the consuming application's FireBase module, so exclude it
         // from the dependency. (not totally necessary if you use compileOnly
@@ -163,6 +165,7 @@ This step is for the permissions you need granted.
 <p align="center"><img src="https://raw.githubusercontent.com/RingerInteractive/Ringer-SDK-Sample-App/main/main_screen.png" width="400" alt="on top"></p>
 
 5. Open Admin portal with provide account and make phone call to test 
+
 
 
 
