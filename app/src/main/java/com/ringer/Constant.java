@@ -25,13 +25,6 @@ public class Constant {
         ExpandableListAdapter expandableListAdapter;
         List<String> expandableListTitle;
         HashMap<String, List<String>> expandableListDetail;
-//
-//         static ProgressDialog progressDialog;
-//         static CustomPrefrence customPrefrence;
-//         static TransferObserver observer;
-//         static Context mContext;
-//         static String folder;
-//         final int[] uploadCounter = {0};
 
         LayoutInflater layoutInflater = (LayoutInflater) view.getContext().getSystemService(view.getContext().LAYOUT_INFLATER_SERVICE);
         View popupView = layoutInflater.inflate(R.layout.menu, null);
@@ -65,10 +58,6 @@ public class Constant {
                     mContext.startActivity(intent);
                     popupWindow.dismiss();
                 }
-
-               /* Toast.makeText(mContext,
-                        expandableListTitle.get(groupPosition) + " List Expanded.",
-                        Toast.LENGTH_SHORT).show();*/
             }
         });
 
@@ -76,11 +65,6 @@ public class Constant {
 
             @Override
             public void onGroupCollapse(int groupPosition) {
-
-              /*  Toast.makeText(mContext,
-                        expandableListTitle.get(groupPosition) + " List Collapsed.",
-                        Toast.LENGTH_SHORT).show();*/
-
             }
         });
 
@@ -106,19 +90,6 @@ public class Constant {
                         mContext.startActivity(browserIntent);
                         popupWindow.dismiss();
                     }
-                    /*if (childPosition == 0) {
-                        Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-                        intent.setData(Uri.parse("package:" + mContext.getPackageName()));
-                        mContext.startActivity(intent);
-                        popupWindow.dismiss();
-                    }
-                    if (childPosition == 1) {
-                        Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-                        intent.setData(Uri.parse("package:" + mContext.getPackageName()));
-                        mContext.startActivity(intent);
-                        popupWindow.dismiss();
-
-                    }*/
                 }
                 if (groupPosition == 1) {
                     if (childPosition == 0) {
@@ -134,21 +105,6 @@ public class Constant {
                         popupWindow.dismiss();
 
                     }
-                   /* if (childPosition == 0) {
-                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(mContext.getResources().getString(R.string.privacy_url)));
-                        mContext.startActivity(browserIntent);
-                        popupWindow.dismiss();
-                    }
-                    if (childPosition == 1) {
-                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(mContext.getResources().getString(R.string.terms_url)));
-                        mContext.startActivity(browserIntent);
-                        popupWindow.dismiss();
-                    }
-                    if (childPosition == 2){
-                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(mContext.getResources().getString(R.string.ack_url)));
-                        mContext.startActivity(browserIntent);
-                        popupWindow.dismiss();
-                    }*/
                 }
 
                 return false;

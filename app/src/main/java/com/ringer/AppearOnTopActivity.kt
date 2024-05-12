@@ -11,16 +11,17 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.ringer.interactive.permission.RingerCallLogDetail
+import com.ringer.sdk.permission.RingerCallLogDetail
+import java.util.Calendar
 
 class AppearOnTopActivity : AppCompatActivity() {
 
-    lateinit var btn_appear: Button
-    lateinit var txt_privacy1: TextView
-    lateinit var txt_terms_condition: TextView
-
-    val PERMISSIONS_REQUEST_CALL_LOG = 101
-    var isAskForPermission = false
+    lateinit var btnAppear: Button
+    lateinit var txtPrivacy1: TextView
+    lateinit var txtTermsCondition: TextView
+    lateinit var txtCopyRight: TextView
+    private val PERMISSIONS_REQUEST_CALL_LOG = 101
+    private var isAskForPermission = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,7 +33,7 @@ class AppearOnTopActivity : AppCompatActivity() {
     }
 
     private fun onClick() {
-        btn_appear.setOnClickListener {
+        btnAppear.setOnClickListener {
 
             if (ContextCompat.checkSelfPermission(
                     this,
@@ -58,24 +59,28 @@ class AppearOnTopActivity : AppCompatActivity() {
 
 
         }
-        txt_terms_condition.setOnClickListener {
+        txtTermsCondition.setOnClickListener {
             val browserIntent =
                 Intent(Intent.ACTION_VIEW, Uri.parse(resources.getString(R.string.terms_url)))
             startActivity(browserIntent)
         }
 
-        txt_privacy1.setOnClickListener {
+        txtPrivacy1.setOnClickListener {
             val browserIntent =
                 Intent(Intent.ACTION_VIEW, Uri.parse(resources.getString(R.string.privacy_url)))
             startActivity(browserIntent)
         }
+        txtCopyRight.text =
+            String.format(getString(R.string.copyright_2022_flash_app_llc), Calendar.getInstance().get(
+                Calendar.YEAR));
     }
 
 
     private fun initialize() {
-        btn_appear = findViewById(R.id.btn_appear)
-        txt_privacy1 = findViewById(R.id.txt_privacy1)
-        txt_terms_condition = findViewById(R.id.txt_terms_condition)
+        btnAppear = findViewById(R.id.btn_appear)
+        txtPrivacy1 = findViewById(R.id.txt_privacy1)
+        txtTermsCondition = findViewById(R.id.txt_terms_condition)
+        txtCopyRight = findViewById(R.id.copy_right)
     }
 
     override fun onRequestPermissionsResult(

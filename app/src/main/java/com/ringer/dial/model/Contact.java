@@ -4,8 +4,6 @@ import android.widget.ImageView;
 
 import androidx.databinding.BaseObservable;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 
 public class Contact extends BaseObservable {
 
@@ -40,9 +38,6 @@ public class Contact extends BaseObservable {
     }
 
     public static void loadImage(ImageView view, String imageUrl) {
-        Glide.with(view.getContext())
-                .load(imageUrl)
-                .apply(RequestOptions.circleCropTransform())
-                .into(view);
+
     }
 }

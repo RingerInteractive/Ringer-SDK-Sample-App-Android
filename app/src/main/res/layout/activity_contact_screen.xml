@@ -70,7 +70,7 @@
                     android:layout_marginTop="25dp"
                     android:layout_marginEnd="25dp"
                     android:layout_marginRight="24dp"
-                    android:backgroundTint="@color/blue_foreground"
+                    android:backgroundTint="@color/light_blue"
                     android:focusable="true"
                     app:backgroundTint="@drawable/fab_custom_style"
                     app:borderWidth="0dp"
@@ -323,7 +323,7 @@
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/txt_copy"
+                        android:id="@+id/copy_right"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_above="@+id/txt_privacy"

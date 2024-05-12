@@ -42,7 +42,7 @@
             android:layout_weight="1">
 
             <LinearLayout
-                android:id="@+id/one"
+                android:id="@+id/one_lay"
                 android:layout_width="@dimen/dial_pad_button_size"
                 android:layout_height="@dimen/dial_pad_button_size"
                 android:layout_gravity="center"
@@ -70,7 +70,7 @@
             android:layout_weight="1">
 
             <LinearLayout
-                android:id="@+id/two"
+                android:id="@+id/two_lay"
                 android:layout_width="@dimen/dial_pad_button_size"
                 android:layout_height="@dimen/dial_pad_button_size"
                 android:layout_gravity="center"
@@ -101,7 +101,7 @@
             android:layout_weight="1">
 
             <LinearLayout
-                android:id="@+id/three"
+                android:id="@+id/three_lay"
                 android:layout_width="@dimen/dial_pad_button_size"
                 android:layout_height="@dimen/dial_pad_button_size"
                 android:layout_gravity="center"
@@ -141,7 +141,7 @@
             android:layout_weight="1">
 
             <LinearLayout
-                android:id="@+id/four"
+                android:id="@+id/four_lay"
                 android:layout_width="@dimen/dial_pad_button_size"
                 android:layout_height="@dimen/dial_pad_button_size"
                 android:layout_gravity="center"
@@ -172,7 +172,7 @@
             android:layout_weight="1">
 
             <LinearLayout
-                android:id="@+id/five"
+                android:id="@+id/five_lay"
                 android:layout_width="@dimen/dial_pad_button_size"
                 android:layout_height="@dimen/dial_pad_button_size"
                 android:layout_gravity="center"
@@ -203,7 +203,7 @@
             android:layout_weight="1">
 
             <LinearLayout
-                android:id="@+id/six"
+                android:id="@+id/six_lay"
                 android:layout_width="@dimen/dial_pad_button_size"
                 android:layout_height="@dimen/dial_pad_button_size"
                 android:layout_gravity="center"
@@ -243,7 +243,7 @@
             android:layout_weight="1">
 
             <LinearLayout
-                android:id="@+id/seven"
+                android:id="@+id/seven_lay"
                 android:layout_width="@dimen/dial_pad_button_size"
                 android:layout_height="@dimen/dial_pad_button_size"
                 android:layout_gravity="center"
@@ -274,7 +274,7 @@
             android:layout_weight="1">
 
             <LinearLayout
-                android:id="@+id/eight"
+                android:id="@+id/eight_lay"
                 android:layout_width="@dimen/dial_pad_button_size"
                 android:layout_height="@dimen/dial_pad_button_size"
                 android:layout_gravity="center"
@@ -305,7 +305,7 @@
             android:layout_weight="1">
 
             <LinearLayout
-                android:id="@+id/nine"
+                android:id="@+id/nine_lay"
                 android:layout_width="@dimen/dial_pad_button_size"
                 android:layout_height="@dimen/dial_pad_button_size"
                 android:layout_gravity="center"
@@ -345,7 +345,7 @@
             android:layout_weight="1">
 
             <LinearLayout
-                android:id="@+id/star"
+                android:id="@+id/star_lay"
                 android:layout_width="@dimen/dial_pad_button_size"
                 android:layout_height="@dimen/dial_pad_button_size"
                 android:layout_gravity="center"
@@ -375,7 +375,7 @@
             android:layout_weight="1">
 
             <LinearLayout
-                android:id="@+id/zero"
+                android:id="@+id/zero_lay"
                 android:layout_width="@dimen/dial_pad_button_size"
                 android:layout_height="@dimen/dial_pad_button_size"
                 android:layout_gravity="center"
@@ -406,7 +406,7 @@
             android:layout_weight="1">
 
             <LinearLayout
-                android:id="@+id/sign"
+                android:id="@+id/sign_lay"
                 android:layout_width="@dimen/dial_pad_button_size"
                 android:layout_height="@dimen/dial_pad_button_size"
                 android:layout_gravity="center"
@@ -445,7 +445,7 @@
             android:layout_weight="1">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/clearAll"
+                android:id="@+id/clearAll_lay"
                 android:layout_width="@dimen/dial_pad_button_size"
                 android:layout_height="@dimen/dial_pad_button_size"
                 android:layout_gravity="center"
@@ -460,7 +460,7 @@
             android:layout_weight="1">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/call"
+                android:id="@+id/call_lay"
                 android:layout_width="@dimen/dial_pad_button_size"
                 android:layout_height="@dimen/dial_pad_button_size"
                 android:layout_gravity="center"
@@ -475,7 +475,7 @@
             android:layout_weight="1">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/clear"
+                android:id="@+id/clear_lay"
                 android:layout_width="@dimen/dial_pad_button_size"
                 android:layout_height="@dimen/dial_pad_button_size"
                 android:layout_gravity="center"

@@ -6,13 +6,14 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import java.util.Calendar
 
 class NotificationActivity : AppCompatActivity() {
 
-    lateinit var btn_allow_notifications: Button
-    lateinit var txt_privacy1 : TextView
-    lateinit var txt_terms_condition : TextView
-
+    lateinit var btnAllowNotifications: Button
+    lateinit var txtPrivacy1 : TextView
+    lateinit var txtTermsCondition : TextView
+    lateinit var txtCopyRight: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notification)
@@ -23,7 +24,7 @@ class NotificationActivity : AppCompatActivity() {
     }
 
     private fun onClick() {
-        btn_allow_notifications.setOnClickListener {
+        btnAllowNotifications.setOnClickListener {
 
             PreferencesApp().setScreenNumber(this, 4)
             startActivity(
@@ -34,21 +35,25 @@ class NotificationActivity : AppCompatActivity() {
                 )
                 finish()
         }
-        txt_terms_condition.setOnClickListener {
+        txtTermsCondition.setOnClickListener {
 
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(resources.getString(R.string.terms_url)))
             startActivity(browserIntent)
 
         }
-        txt_privacy1.setOnClickListener {
+        txtPrivacy1.setOnClickListener {
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(resources.getString(R.string.privacy_url)))
             startActivity(browserIntent)
         }
+        txtCopyRight.text =
+            String.format(getString(R.string.copyright_2022_flash_app_llc), Calendar.getInstance().get(
+                Calendar.YEAR));
     }
 
     private fun initialize() {
-        btn_allow_notifications = findViewById(R.id.btn_allow_notifications)
-        txt_privacy1 = findViewById(R.id.txt_privacy1)
-        txt_terms_condition = findViewById(R.id.txt_terms_condition)
+        btnAllowNotifications = findViewById(R.id.btn_allow_notifications)
+        txtPrivacy1 = findViewById(R.id.txt_privacy1)
+        txtTermsCondition = findViewById(R.id.txt_terms_condition)
+        txtCopyRight = findViewById(R.id.copy_right)
     }
 }

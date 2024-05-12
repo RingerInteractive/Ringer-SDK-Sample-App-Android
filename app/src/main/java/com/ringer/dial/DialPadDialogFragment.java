@@ -42,22 +42,22 @@ public class DialPadDialogFragment extends BottomSheetDialogFragment implements 
 
     private void init() {
         this.inputNumber = mLayoutView.findViewById(R.id.inputNumber);
-        this.zero = this.mLayoutView.findViewById(R.id.zero);
-        this.clear = (AppCompatImageView) this.mLayoutView.findViewById(R.id.clear);
-        this.mLayoutView.findViewById(R.id.zero).setOnClickListener(this);
-        this.mLayoutView.findViewById(R.id.one).setOnClickListener(this);
-        this.mLayoutView.findViewById(R.id.two).setOnClickListener(this);
-        this.mLayoutView.findViewById(R.id.three).setOnClickListener(this);
-        this.mLayoutView.findViewById(R.id.four).setOnClickListener(this);
-        this.mLayoutView.findViewById(R.id.five).setOnClickListener(this);
-        this.mLayoutView.findViewById(R.id.six).setOnClickListener(this);
-        this.mLayoutView.findViewById(R.id.seven).setOnClickListener(this);
-        this.mLayoutView.findViewById(R.id.eight).setOnClickListener(this);
-        this.mLayoutView.findViewById(R.id.nine).setOnClickListener(this);
-        this.mLayoutView.findViewById(R.id.star).setOnClickListener(this);
-        this.mLayoutView.findViewById(R.id.sign).setOnClickListener(this);
-        this.mLayoutView.findViewById(R.id.clearAll).setOnClickListener(this);
-        this.mLayoutView.findViewById(R.id.call).setOnClickListener(this);
+        this.zero = this.mLayoutView.findViewById(R.id.zero_lay);
+        this.clear = (AppCompatImageView) this.mLayoutView.findViewById(R.id.clear_lay);
+        this.mLayoutView.findViewById(R.id.zero_lay).setOnClickListener(this);
+        this.mLayoutView.findViewById(R.id.one_lay).setOnClickListener(this);
+        this.mLayoutView.findViewById(R.id.two_lay).setOnClickListener(this);
+        this.mLayoutView.findViewById(R.id.three_lay).setOnClickListener(this);
+        this.mLayoutView.findViewById(R.id.four_lay).setOnClickListener(this);
+        this.mLayoutView.findViewById(R.id.five_lay).setOnClickListener(this);
+        this.mLayoutView.findViewById(R.id.six_lay).setOnClickListener(this);
+        this.mLayoutView.findViewById(R.id.seven_lay).setOnClickListener(this);
+        this.mLayoutView.findViewById(R.id.eight_lay).setOnClickListener(this);
+        this.mLayoutView.findViewById(R.id.nine_lay).setOnClickListener(this);
+        this.mLayoutView.findViewById(R.id.star_lay).setOnClickListener(this);
+        this.mLayoutView.findViewById(R.id.sign_lay).setOnClickListener(this);
+        this.mLayoutView.findViewById(R.id.clearAll_lay).setOnClickListener(this);
+        this.mLayoutView.findViewById(R.id.call_lay).setOnClickListener(this);
         // this.zero.setOnLongClickListener(new DialPadDialogFragment$$ExternalSyntheticLambda4(this));
         // this.clear.setOnClickListener(new DialPadDialogFragment$$ExternalSyntheticLambda2(this));
         //  this.clear.setOnLongClickListener(new DialPadDialogFragment$$ExternalSyntheticLambda5(this));
@@ -95,46 +95,47 @@ public class DialPadDialogFragment extends BottomSheetDialogFragment implements 
     public void onClick(View view) {
         String numpad = "";
         switch (view.getId()) {
-            case R.id.eight:
+
+            case R.id.eight_lay:
                 numpad = "8";
                 break;
-            case R.id.five:
+            case R.id.five_lay:
                 numpad = "5";
                 break;
-            case R.id.four:
+            case R.id.four_lay:
                 numpad = "4";
                 break;
-            case R.id.nine:
+            case R.id.nine_lay:
                 numpad = "9";
                 break;
-            case R.id.one:
+            case R.id.one_lay:
                 numpad = "1";
                 break;
-            case R.id.seven:
+            case R.id.seven_lay:
                 numpad = "7";
                 break;
-            case R.id.sign:
+            case R.id.sign_lay:
                 numpad = "#";
                 break;
-            case R.id.six:
+            case R.id.six_lay:
                 numpad = "6";
                 break;
-            case R.id.star:
+            case R.id.star_lay:
                 numpad = "*";
                 break;
-            case R.id.three:
+            case R.id.three_lay:
                 numpad = "3";
                 break;
-            case R.id.two:
+            case R.id.two_lay:
                 numpad = "2";
                 break;
-            case R.id.zero:
+            case R.id.zero_lay:
                 numpad = "0";
                 break;
-            case R.id.call:
+            case R.id.call_lay:
                 callClick();
                 break;
-            case R.id.clearAll:
+            case R.id.clearAll_lay:
                 clearAllClick();
                 break;
         }

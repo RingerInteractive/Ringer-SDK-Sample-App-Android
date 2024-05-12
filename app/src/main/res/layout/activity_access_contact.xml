@@ -45,7 +45,7 @@
                 android:gravity="center"
                 android:text="Ringer needs permission to access and transfer contacts on your device, which may include personal information such as contact name and phone numbers, to provide our service.  By clicking agree, you agree to the privacy policy, and we have your consent to do so."
                 android:textColor="@color/white"
-                android:textSize="20sp"
+                android:textSize="21sp"
                 android:textStyle="normal" />
 
             <TextView
@@ -69,11 +69,11 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/nexabold"
+                android:layout_centerInParent="true"
                 android:text="Allow Ringer Access to Contacts"
                 android:textAllCaps="false"
-                android:gravity="center"
                 android:textColor="@color/white"
-                android:textSize="23sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
 
@@ -122,6 +122,7 @@
 
 
             <TextView
+                android:id="@+id/copy_right"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_above="@id/txt_privacy"

@@ -1,43 +1,43 @@
 package com.ringer
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.util.Log
 import android.widget.Button
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import com.ringer.interactive.askSDK.offerReplacingDefaultDialer
+import com.ringer.sdk.permission.offerReplacingDefaultDialer
 
 
 class MainActivity : AppCompatActivity() {
-
-    lateinit var btn_continue: Button
-
+    private lateinit var btnContinue: Button
     companion object {
-        val REQUEST_CODE_SDK = 2
+        const val REQUEST_CODE_DEFAULT_PHONE = 2
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btn_continue = findViewById(R.id.btn_continue)
+        btnContinue = findViewById(R.id.btn_continue)
 
 
-        btn_continue.setOnClickListener {
+        btnContinue.setOnClickListener {
 
             //SDK Default Dialer
             offerReplacingDefaultDialer(
                 this, applicationContext.packageName,
-                REQUEST_CODE_SDK
+                REQUEST_CODE_DEFAULT_PHONE
             )
 
         }
 
-
         val timer = object : CountDownTimer(3000, 1000) {
             override fun onTick(millisUntilFinished: Long) {}
 
+            @RequiresApi(Build.VERSION_CODES.Q)
             override fun onFinish() {
                 // 0 = Get Contact Number
                 // 1 = Default Dialer Set
@@ -48,12 +48,7 @@ class MainActivity : AppCompatActivity() {
                 val screenNumber = PreferencesApp().getScreenNumber(this@MainActivity);
                 Log.e("screenNumber", screenNumber.toString())
                 when (screenNumber) {
-                    0 -> startActivity(
-                        Intent(
-                            this@MainActivity,
-                            SimNumberActivity::class.java
-                        )
-                    )
+
                     1 -> startActivity(
                         Intent(
                             this@MainActivity,
@@ -100,25 +95,5 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-/*    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-
-        if (requestCode == REQUEST_CODE_SDK){
-
-            if (resultCode == RESULT_OK){
-                InitializeToken(
-                    this,
-                    resources.getString(R.string.ringer_user_name),
-                    resources.getString(R.string.ringer_password),
-                    resources.getString(R.string.app_name)
-                )
-                startActivity(Intent(this@MainActivity,ThankYouScreen::class.java))
-                finish()
-            }
-
-        }
-
-    }*/
-
 
 }

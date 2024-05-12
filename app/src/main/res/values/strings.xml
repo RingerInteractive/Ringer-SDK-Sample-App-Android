@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools"  tools:ignore="MissingTranslation">
     <string name="app_name">Ringer</string>
     <string name="ringer_user_name">XXX-XXX-XXX</string>
     <string name="ringer_password">XXX-XXX-XXX</string>
@@ -27,7 +27,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="privacy_policy_terms_of_service">Terms of Service</string>
-    <string name="copyright_2022_flash_app_llc">Copyright 2022 Flash App LLC</string>
+    <string name="copyright_2022_flash_app_llc">Copyright %d Flash App LLC</string>
     <string name="allow_notifications">Allow Notifications</string>
     <string name="notifications">Notifications</string>
     <string name="accept_terms">Accept Terms</string>
@@ -43,4 +43,9 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
     <string name="ringer_interactive_allows_you_to_receive_personalized_caller_ids_with_images_and_calls_to_action_when_companies_you_do_business_with_call_you_get_a_personalized_display_screen_to_know_who_and_why_they_are_calling_so_you_don_t_miss_important_calls">Ringer Interactive allows you to receive personalized Caller IDs with images and calls to action when companies you do business with call you.Get a personalized display screen to know who and why they are calling so you don\'t miss important calls.</string>
     <string name="privacy_policy3"><u>Privacy Policy</u></string>
 
+    <string name="default_notification_channel_id">com.ringer.myapplication</string>
+    <string name="popup_message_concern">- Ringer needs permission to access and transfer contacts, phone numbers, call logs info from your device to our server. \n
+- We use your contact information for analytics and compare to detect spam calls and show caller ID info. \n
+        - We use your phone number and call logs for analytics and compare to detect spam calls and show caller ID info. \n
+- Your contact and phone numbers, call logs are kept in our system and will not be shared with any third party.By clicking agree, you agree to the privacy policy, and we have your consent.</string>
 </resources>
